@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+    
+  <style>
+ body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("zlineup.jpg");
+
+    /* Full height */
+    height: 100%; 
+    z-index: 0;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+      .set1, .set2, .set3, .set4, .set5 {
+          transition: transform .2s;
+          z-index: 1;
+          position: absolute;
+      }    
+      .set1{top: 30%;
+          left: 10%;}
+       .set2{top: 30%;
+          left: 27%;}
+       .set3{top: 30%;
+          left: 45%;}
+       .set4{top: 30%;
+          left: 62%;}
+       .set5{top: 30%;
+          left: 80%;}
+      
+      audio{
+          z-index: 1;
+      }
+      .set1:hover,.set2:hover,.set3:hover,.set4:hover,.set5:hover{
+          transform: scale(1.4);
+      }
+</style>  
+    
+  <body>
+      <audio controls autoplay loop hidden>
+<source src="Suspense.mp3" type="audio/mpeg">
+<p>If you can read this, your browser does not support the audio element.</p>
+</audio>
+  <div class="bg"></div>
+      <div class="set1"><a href="http://codd.cs.gsu.edu/~jwalls11/project2/9-1.php"><img src="Male-Face-J1-icon.png" alt=""></a></div>
+  <div class="set2"><a href="http://codd.cs.gsu.edu/~jwalls11/project2/9-2.php"><img src="Male-Face-J2-icon.png" alt=""></a>
+      </div>   <div class="set3"><a href="http://codd.cs.gsu.edu/~jwalls11/project2/9-3.php"><img src="Male-Face-J3-icon.png" alt=""></a></div>
+      <div class="set4"><a href="http://codd.cs.gsu.edu/~jwalls11/project2/9-4.php"><img src="Male-Face-J5-icon.png" alt=""></a></div>
+      <div class="set5"><a href="http://codd.cs.gsu.edu/~jwalls11/project2/9-5.php"><img src="Male-Face-J4-icon.png" alt=""></a></div>
+      
+      
+  </body>
+</html>
